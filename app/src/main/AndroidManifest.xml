@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:label="Phantom Renderer">
+
+        <meta-data
+            android:name="renderer_name"
+            android:value="Phantom Renderer"/>
+
+        <meta-data
+            android:name="renderer_lib"
+            android:value="libGL.so"/>
+
+    </application>
+
+</manifest>
