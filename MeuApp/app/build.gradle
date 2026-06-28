@@ -3,49 +3,23 @@ plugins {
 }
 
 android {
-    namespace 'com.meu.renderer'
-    compileSdk 33
+    namespace 'com.example.app'
+    compileSdk 34
 
     defaultConfig {
-        applicationId "com.meu.renderer"
+        applicationId "com.example.app"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-
-        // 🔥 SUPORTE 32 e 64 bits
-        ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a'
-        }
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            shrinkResources false
-        }
-        debug {
-            debuggable true
-        }
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
-
-    packagingOptions {
-        resources {
-            excludes += ['/META-INF/{AL2.0,LGPL2.1}']
         }
     }
 }
 
 dependencies {
-    // Android básico
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
-
-    // Opcional (útil pra debug)
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
